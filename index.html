@@ -1,23 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Production House</title>
-    <link rel="shortcut icon" href="images/icons/camera.png" type="image/x-icon">
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Production House</title>
+  <link rel="shortcut icon" href="images/icons/camera.png" type="image/x-icon">
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/686e4da3bd.js" crossorigin="anonymous"></script>
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow: '#FECC02',
+            black: '#131313',
+            gray: '#4E4E4E',
+            white: '#FFFFFF',
+          },
+          fontFamily: {
+            bebas: ['Bebas Neue', "sans-serif"],
+            montserrat: ['Montserrat', "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
 </head>
+
 <body>
-    
+  <!-- Header Part Start -->
+  <header>
+    <!-- NavBar -->
+    <nav class="bg-white h-24 fixed top-0 right-0 left-0">
+      <div class="flex justify-between items-center h-24 w-full max-w-7xl mx-auto p-5 font-bebas">
+        <h1 class="text-black text-4xl font-medium">Production House</h1>
+        <ul class="flex text-lg gap-8">
+          <li>About Us</li>
+          <li>Our Movies</li>
+          <li>Services</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <section class="h-screen pt-24 bg-[url('images/banner.jpg')] bg-cover">
+      <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+        <div class="font-bebas">
+          <h2 class="text-white text-lg">Movie production studio</h2>
+          <h1 class="text-white text-7xl">Films MAde to</h1>
+          <h1 class="text-yellow text-7xl">Perfection</h1>
+          <p class="text-white font-montserrat max-w-lg mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Ut elit tellus,
+            luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          <button
+            class="font-bebas border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:text-black transition-all">Discover
+            More</button>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- Header Part End -->
+
+  <!-- Main PArt Start -->
+  <main>
+    <section class="py-40">
+      <div class="border-2 border-black  w-full max-w-7xl mx-auto">
+        <div class="md:flex p-3 md:p-8">
+          <div class="w-full md:w-1/2 h-[500px] bg-[url('images/camera-man.jpg')] bg-cover bg-center">
+          </div>
+          <div class="w-full md:w-1/2 p-8  font-bebas">
+            <h2 class="text-lg">About Us</h2>
+            <h1 class="text-7xl">FIlming Experience</h1>
+            <h1 class="text-7xl">Just Got better</h1>
+            <p class="font-montserrat mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur hic quia officiis corrupti aut
+              iure fugit delectus dolores deleniti?</p>
+            <button
+              class="font-bebas border-2 border-black py-2 px-3 text-black text-lg hover:bg-yellow hover:text-black transition-all mt-10">Discover
+              More</button>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 p-8 gap-12">
+          <div>
+            <hr class="bg-black h-2 mb-3 w-full">
+            <h1 class="text-5xl font-bebas">OUR VISION</h1>
+            <p class="text-lg font-montserret">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+          <div>
+            <hr class="bg-black h-2 mb-3 w-full">
+            <h1 class="text-5xl font-bebas">OUR Mission</h1>
+            <p class="text-lg font-montserret">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+          <div>
+            <hr class="bg-black h-2 mb-3 w-full">
+            <h1 class="text-5xl font-bebas">OUR Motto</h1>
+            <p class="text-lg font-montserret">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Main PArt End -->
+
+  <!-- Footer Part Start -->
+  <footer>
+
+  </footer>
+  <!-- Footer Part End -->
 </body>
+
 </html>
